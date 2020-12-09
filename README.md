@@ -7,7 +7,7 @@
 feedingORCAs
 =============
 
-![image](docs/feedingORCAs.svg){.align-center}
+![image](docs/molecule_animation.gif)
 
 <img src="https://github.com/favicon.ico" width="48">
 
