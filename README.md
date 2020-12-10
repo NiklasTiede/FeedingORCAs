@@ -9,49 +9,26 @@ feedingORCAs
 
 ![image](docs/molecule_animation.gif)
 
-<img src="https://github.com/favicon.ico" width="48">
 
-![CI](https://github.com/fastai/fastai/workflows/CI/badge.svg)
-[![PyPI](https://img.shields.io/pypi/v/fastai?color=blue&label=pypi%20version)](https://pypi.org/project/fastai/#description) 
-[![Conda (channel only)](https://img.shields.io/conda/vn/fastai/fastai?color=seagreen&label=conda%20version)](https://anaconda.org/fastai/fastai)
-[![Build fastai images](https://github.com/fastai/docker-containers/workflows/Build%20fastai%20images/badge.svg)](https://github.com/fastai/docker-containers) 
-![docs](https://github.com/fastai/fastai/workflows/docs/badge.svg)
+[comment]: <> ([![conda version]&#40;https://img.shields.io/&#41;]&#40;https://anaconda.org/&#41;    # https://shields.io/category/version)
 
-![Build fastai images](https://github.com/fastai/docker-containers/workflows/Build%20fastai%20images/badge.svg) 
-![Build nbdev images](https://github.com/fastai/docker-containers/workflows/Build%20nbdev%20images/badge.svg) 
-![Build nbdev docs](https://github.com/fastai/docker-containers/workflows/Build%20nbdev%20docs/badge.svg) 
-![Build CI Containers](https://github.com/fastai/docker-containers/workflows/Build%20CI%20Containers/badge.svg)
+[comment]: <> ([![platform]&#40;https://img.shields.io/&#41;]&#40;&#41;    # https://shields.io/category/platform-support)
 
-[![Travis CI](https://img.shields.io/travis/com/numpy/numpy/master?label=Travis%20CI)](
-    https://travis-ci.com/github/numpy/numpy)
-[![Azure](https://dev.azure.com/numpy/numpy/_apis/build/status/azure-pipeline%20numpy.numpy)](
-    https://dev.azure.com/numpy/numpy/_build/latest?definitionId=5)
-[![codecov](https://codecov.io/gh/numpy/numpy/branch/master/graph/badge.svg)](
-    https://codecov.io/gh/numpy/numpy)
+![Read the Docs](https://img.shields.io/readthedocs/feedingorcas)
 
-[![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/tensorflow)
-[![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://badge.fury.io/py/tensorflow)
+[comment]: <> ([![license]&#40;https://img.shields.io/conda/&#41;]&#40;&#41;    # https://shields.io/category/license)
 
 
+[comment]: <> ([![Travis CI]&#40;https://img.shields.io/&#41;]&#40;https://travis-ci.com/github/numpy/numpy&#41;     # https://shields.io/category/build)
 
+[comment]: <> ([![codecov]&#40;https://img.shields.io/&#41;]&#40;https://codecov.io/&#41;    # https://shields.io/category/coverage)
 
+[comment]: <> ([![codacy]&#40;https://img.shields.io/&#41;]&#40;&#41;    # https://shields.io/category/analysis)
 
+[comment]: <> (![total lines]&#40;https://img.shields.io/&#41;    # https://shields.io/category/size)
 
-[![conda version]()]()    # https://shields.io/category/version
-[![platform]()]()    # https://shields.io/category/platform-support
-[![docs]()]()    # https://shields.io/category/build
-[![license](https://img.shields.io/conda/l/pandas/pandas)]()    # https://shields.io/category/license
+[comment]: <> (![repo size]&#40;https://img.shields.io/&#41;    # https://shields.io/category/size)
 
-
-[![Travis CI]()]()     # https://shields.io/category/build
-[![codecov]()]()    # https://shields.io/category/coverage
-[![codacy]()]()    # https://shields.io/category/analysis
-
-![total lines]()    # https://shields.io/category/size
-![repo size]()    # https://shields.io/category/size
-
-
-[comment]: <> (test )
 
 
 goal: an interface for ORCA and a db, rdkit adds also functionality to 

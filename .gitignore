@@ -59,3 +59,19 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+
+
+dist
+src/stk.egg-info
+
+**/__pycache__/
+
+**/.cache
+*.ipynb_checkpoints
+**/.vscode
+
+# Some folders get created by tests.
+**/tests_output
+docs/build
+tests/failures.txt
