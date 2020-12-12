@@ -1,0 +1,26 @@
+# Conda environment for astropy-healpix development
+#
+# Install:    conda env create -f environment-dev.yml
+# Update:     conda env update -f environment-dev.yml
+# Activate:   conda activate feedingorcas
+# Deactivate: conda deactivate
+
+name: feedingorcas
+channels:
+  - defaults
+  - conda-forge
+  - niklastiede
+dependencies:
+  - feedingorcas
+  - pip
+  - python==3.8
+  - yapf
+  - isort
+  - pre_commit
+  - pytest
+  - sphinx
+  - conda-tox
+  - codecov
+variables:
+  VAR1: valueA
+  VAR2: valueB

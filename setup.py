@@ -2,14 +2,12 @@ import pathlib
 
 import setuptools
 
-# from src.feedingorcas import (__author__, __author_email__, __doc_url__,
-#                               __src_url__, __version__)
-
 __version__ = "0.1.0"
 __author__ = 'Niklas Tiede'
 __author_email__ = 'niklastiede2@gmail.com'
 __doc_url__ = 'https://feedingorcas.readthedocs.io'
 __src_url__ = 'https://github.com/NiklasTiede/feedingORCAs'
+
 
 setuptools.setup(
     name="feedingorcas",
@@ -26,16 +24,15 @@ setuptools.setup(
     },
     license="MIT",
     package_dir={"": "src"},
-    # packages=setuptools.find_packages(where="src"),
-    packages=setuptools.find_packages("./src"),
-    install_requires=[  # production install: python setup.py install or pip install .
+    packages=setuptools.find_packages(where="src"),
+    install_requires=[                               # production install: python setup.py install or pip install .
         "rdkit",
         "matplotlib",
         "pandas",
         "numpy",
         "pymongo",
     ],
-    extras_require={   # pip install -e .[dev]    to install requirements AND dev-packages
+    extras_require={                                 # used by conda to test before packaging
         'dev': [
             'pytest',
             # 'pytest-pep8',
@@ -52,7 +49,7 @@ setuptools.setup(
     # ],
     platforms="linux",
     python_requires=">=3.5",
-    entry_points={"console_scripts": ["feedingorcas = feedingorcas:run_main"]},
+    entry_points={"console_scripts": ["feedingorcas = feedingorcas.__main__:run_main"]},
     classifiers=[
         "Development Status :: 1 - Planning",
         "Intended Audience :: Education",
@@ -69,4 +66,3 @@ setuptools.setup(
         "Topic :: Scientific/Engineering :: Chemistry",
     ],
 )
-# entry_points = {"console_scripts": ["feedingorcas = feedingorcas.__main__:run_main"]},

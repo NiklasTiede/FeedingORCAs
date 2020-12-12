@@ -7,7 +7,7 @@ package:
 
 source:
   path: ..
-#  git_url: {{ data['url'] }}
+#  git_url: ..
 
 build:
   number: 0
@@ -35,10 +35,9 @@ test:
   source_files:
     - tests
   requires:
-    - pytest
-#    {% for test_dep in data['extras_require'] %}
-#    - {{ test_dep.lower() }}
-#    {% endfor %}
+    {% for test_dep in data['extras_require']['dev'] %}
+    - {{ test_dep.lower() }}
+    {% endfor %}
   commands:
     - pytest tests
 
