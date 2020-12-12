@@ -10,4 +10,3 @@ properties, storing them in a MongoDB and visualization.
 
 from .core import Molecule, MoleculeList, MoleculeMongoDB
 from .__main__ import __version__, __author__, __author_email__, __doc_url__, __src_url__
-

@@ -1,0 +1,51 @@
+
+{% set data = load_setup_py_data() %}
+
+package:
+  name: 'feedingorcas'
+  version: {{ data['version'] }}
+
+source:
+  path: ..
+#  git_url: {{ data['url'] }}
+
+build:
+  number: 0
+  entry_points:
+    {% for entry_point in data['entry_points']['console_scripts'] %}
+    - {{ entry_point }}
+    {% endfor %}
+  script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+  build:
+    - python
+    - pip
+    - setuptools
+
+  run:
+    - python
+    {% for dep in data['install_requires'] %}
+    - {{ dep.lower() }}
+    {% endfor %}
+
+test:
+  imports:
+    - {{ data['name'] }}
+  source_files:
+    - tests
+  requires:
+    - pytest
+#    {% for test_dep in data['extras_require'] %}
+#    - {{ test_dep.lower() }}
+#    {% endfor %}
+  commands:
+    - pytest tests
+
+about:
+  home: {{ data['url'] }}
+  license: {{ data['license'] }}
+  summary: {{ data['description'] }}
+  dev_url: {{ data['project_urls']['Source Code'] }}
+  doc_url: {{ data['project_urls']['Documentation'] }}
+  doc_source_url: {{ data['url'] + '/blob/master/README.md' }}
